@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0
+  color: #616161;
+  background: #fff;
+  line-height: 1.6;
+}
+
+body, input{
+  font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+form {
+  margin: 12% auto;
+  width: 19em;
+  text-align: center;
+  position: relative;
+
+
+}
+@keyframes moveDown {
+  0% {
+    transform: translate(0, -10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+}
+
+input {
+  color: #616161;
+  font-size: 1.5em;
+  outline: none;
+  box-shadow: none;
+  border-top: none;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #00A300;
+  background: transparent;
+  display: block;
+  height: 2em;
+  width: 12em;
+  margin-bottom: 5%;
+  padding: 0 3%;
+  position: relative;
+  z-index: 0;
+  transition: border .25s;
+}
+
+button {
+  border: none;
+  background: transparent;
+  color: #616161;
+  font-size: 2.05em;
+  padding: 3% 7%;
+  cursor: pointer;
+  position: absolute;
+}
+
+button:hover, button:focus {
+  color: #111;
+}
+
+
+div {
+  margin: 15% auto 0;
+  animation: moveDown .3s;
+  animation-fill-mode: forwards;
+}
+
+p {
+  margin-bottom: .8em;
+}
