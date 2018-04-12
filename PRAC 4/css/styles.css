@@ -1,0 +1,65 @@
+#cardBox{
+  display: flex;
+}
+#card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+    border-radius: 4px;
+    width:25%;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  }
+
+#card:hover {
+    background: #F1FFFD;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+#title{
+  margin:4px;
+  margin-bottom: 4px;
+  padding-top: 4px;
+  font-size: 20px;
+}
+img{
+  width:100%;
+}
+
+#container {
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  }
+#container p {
+  font-size: 15px;
+  margin:5px;
+  margin-bottom: 8px;
+  }
+#actions{
+  font-size: 15px;
+  margin:4px;
+  padding-bottom: 5px;
+}
+@media (max-width: 500px) {
+  #cardBox{
+    flex-direction: column;
+  }
+  #card {
+      width:100%;
+    }
+}
+@media (max-width: 1024px) and (min-width:500px) {
+  #cardBox{
+    flex-direction: column;
+  }
+  #card {
+      width:100%;
+    }
+  #title{
+      margin:4px;
+      font-size: 48px;
+    }
+  #container p {
+      font-size: 30px;
+      }
+  #actions{
+      font-size: 28px;
+    }
+}
