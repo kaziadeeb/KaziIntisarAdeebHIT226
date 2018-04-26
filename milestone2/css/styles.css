@@ -1,0 +1,104 @@
+h1, h2 {
+	text-align: center;
+}
+
+p {
+	margin:20px auto; 
+	width:600px;
+	font-size: 18px;
+}
+
+.fa.fa-bars{
+    display:none;
+}
+#nav-js{
+    background:#999;
+    font-family:"Open Sans",Helvetica,Arial,sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+#nav-js ul{
+    margin:0;
+    padding:0 8px;
+    list-style:none;
+}
+#nav-js ul li{
+    display:inline-block;
+}
+#nav-js li a,
+#nav-js li span{
+    display:inline-block;
+    padding:0 8px;
+    text-decoration:none;
+    cursor:pointer;
+    line-height:40px;
+}
+#nav-js li a,
+#nav-js li span,
+#nav-js .fa-plus-square{
+    color:black;
+}
+#nav-js .fa-plus-square,
+#nav-js .fa-minus-square{
+    margin-left:10px;
+}
+#nav-js li:hover .fa-plus-square{
+    display:none;
+}
+#nav-js li:hover .fa-minus-square{
+    display:inline-block;
+}
+#nav-js li .fa-minus-square{
+    display:none;
+}
+@media (min-width:481px){
+    #toggle-dropdown{display:none}
+    #nav-js ul ul{
+        display:none;
+        padding:0;
+        min-width:170px;
+    }
+    #nav-js ul ul li,
+    #nav-js ul ul li a{
+        display:block;
+    }
+    #nav-js ul li:hover ul{
+        display:block;
+        background:#ecf0f1;
+        position:absolute;
+    }
+    #nav-js li:hover span,
+    #nav-js li a:hover,
+    #nav-js li span:hover,
+    #nav-js li:hover .fa-plus-square{
+        background:#666;
+    }
+}
+@media (max-width:480px){
+    .showmenu{display:block}
+    .hidemenu{display:none}
+    #toggle-dropdown,
+    #toggle-dropdown .fa.fa-bars{line-height:40px;}
+    #toggle-dropdown{display:block;cursor:pointer;padding:0 10px;}
+    .fa.fa-bars{display:inline-block;float:right;}
+    #nav-js{height:30%;overflow:auto;padding-bottom:4px}
+    #nav-js li a,#nav-js li span{border-bottom:1px dotted;}
+    #nav-js li a,
+    #nav-js li span,
+    #nav-js ul li{display:block;cursor:pointer;}
+    #nav-js ul ul{display:block;padding:0 0 0 10px;}
+    #nav-js li{position:relative}
+    #nav-js .fa-plus-square,
+    #nav-js .fa-minus-square{
+        position:absolute;
+        right:0;
+        line-height:40px;
+    }
+    #nav-js li:hover span,
+    #nav-js li a:hover,
+    #nav-js li span:hover,
+    #nav-js li:hover .fa-plus-square{
+        color:white;
+    }
+
+}
